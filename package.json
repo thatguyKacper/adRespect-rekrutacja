@@ -1,0 +1,38 @@
+{
+  "name": "adrespect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "author": "Kacper Wójtowicz",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "dev": "cross-env TAILWIND_MODE=watch vite",
+    "build": "cross-env TAILWIND_MODE=build vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^5.0.0",
+    "postcss": "^8.4.28",
+    "prettier": "^3.0.2",
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "tailwindcss": "^3.3.3",
+    "vitawind": "^2.2.4",
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "macy": "^2.5.1"
+  }
+}

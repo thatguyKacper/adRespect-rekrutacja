@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+@layer components {
+    .menu-item {
+        @apply text-center cursor-pointer text-black font-inter text-sm font-normal hover:underline
+    }
+
+    .open {
+        @apply opacity-100
+    }
+
+    .slide {
+        @apply transition-all duration-[1s] opacity-0
+    }
+
+    .prev {
+        @apply absolute top-0 -translate-x-full invisible
+    }
+
+    .next {
+        @apply absolute top-0 translate-x-full invisible
+    }
+
+    .current {
+        @apply translate-x-0 opacity-100
+    }
+}
